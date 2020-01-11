@@ -1,9 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// 引入挂载到路由的页面文件
+import Login from '@/views'
+
+// 注册路由到全局
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/'
+  },
+  {
+    path: '/login',
+    component: Login
+  }
 
   // {
   //   path: '/',
